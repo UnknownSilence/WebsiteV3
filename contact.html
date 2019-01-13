@@ -113,33 +113,20 @@
 			</header>
 
 			<div class="cd-content" id="contact-content">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae illo veritatis ea deserunt aliquam blanditiis,
-					voluptas optio, voluptate ut accusamus veniam numquam, porro! Cum minima a molestiae, similique voluptate,
-					perferendis vel iusto quam suscipit delectus dolore ducimus possimus illo molestias voluptas labore optio
-					consequuntur sapiente pariatur libero nam temporibus. Laudantium!
-				</p>
-
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae illo veritatis ea deserunt aliquam blanditiis,
-					voluptas optio, voluptate ut accusamus veniam numquam, porro! Cum minima a molestiae, similique voluptate,
-					perferendis vel iusto quam suscipit delectus dolore ducimus possimus illo molestias voluptas labore optio
-					consequuntur sapiente pariatur libero nam temporibus. Laudantium!
-				</p>
-
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae illo veritatis ea deserunt aliquam blanditiis,
-					voluptas optio, voluptate ut accusamus veniam numquam, porro! Cum minima a molestiae, similique voluptate,
-					perferendis vel iusto quam suscipit delectus dolore ducimus possimus illo molestias voluptas labore optio
-					consequuntur sapiente pariatur libero nam temporibus. Laudantium!
-				</p>
-
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae illo veritatis ea deserunt aliquam blanditiis,
-					voluptas optio, voluptate ut accusamus veniam numquam, porro! Cum minima a molestiae, similique voluptate,
-					perferendis vel iusto quam suscipit delectus dolore ducimus possimus illo molestias voluptas labore optio
-					consequuntur sapiente pariatur libero nam temporibus. Laudantium!
-				</p>
+				<form name="contact" class="cd-form floating-labels" netlify>
+					<p>
+						<label>Your Name: <input type="text" name="name" /></label>
+					</p>
+					<p>
+						<label>Your Email: <input type="email" name="email" /></label>
+					</p>
+					<p>
+						<label>Message: <textarea name="message"></textarea></label>
+					</p>
+					<p>
+						<input type="submit"></button>
+					</p>
+				</form>
 			</div> <!-- .cd-content -->
 		</section> <!-- .cd-section -->
 	</main> <!-- .cd-main -->
@@ -147,6 +134,7 @@
 	<div id="cd-loading-bar" data-scale="1" class="contact"></div> <!-- lateral loading bar -->
 	<script src="js/jquery-2.1.4.js"></script>
 	<script src="js/velocity.min.js"></script>
+	<script src="./js/jquery.flexslider-min.js"></script>
 	<script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 
