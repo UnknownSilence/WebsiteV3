@@ -387,6 +387,7 @@ Navigation
     padding-left: 90px;
   }
 
+
   .cd-section .cd-scroll {
     left: -webkit-calc(50vw - (94px - 4px)/2);
     left: calc(50vw - (94px - 4px)/2);
@@ -514,7 +515,7 @@ Navigation
   margin: 0 auto 2em;
   font-size: 1.4rem;
   line-height: 1.6;
-  color: #999999;
+  color: #282828;
 }
 
 @media only screen and (min-width: 768px) {
@@ -636,6 +637,12 @@ Main components
   .cd-testimonials-wrapper {
     margin: 4em auto;
     padding: 64px 50px 114px;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .cd-half-block.content p {
+    font-size: 0.5em;
   }
 }
 
@@ -1934,13 +1941,15 @@ Slider
 .cd-slider-wrapper {
   position: relative;
   height: 100vh;
-  padding: 10px;
+  padding: 5px;
 }
 
 @media only screen and (min-width: 900px) {
   .cd-slider-wrapper {
-    padding: 30px;
+    padding: 5px;
   }
+
+
 }
 
 .cd-slider {
@@ -2003,13 +2012,13 @@ Slider
 .cd-slider .content {
   padding: 30px;
   color: #ffffff;
-  background-color: #767070;
+  background-color: #00ad9f;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .cd-slider .light-bg {
-  color: rgba(0, 0, 0, 0.6);
+  color: #ffffff
 }
 
 .cd-slider .btn {
@@ -2030,15 +2039,15 @@ Slider
 }
 
 .cd-slider li:nth-of-type(2) .content {
-  background-color: #ccd0c1;
+  background-color: #00ad9f;
 }
 
 .cd-slider li:nth-of-type(3) .content {
-  background-color: #f3b96c;
+  background-color: #00ad9f;
 }
 
 .cd-slider li:nth-of-type(4) .content {
-  background-color: #f46c6a;
+  background-color: #00ad9f;
 }
 
 .cd-slider h2 {
@@ -2220,6 +2229,8 @@ Slider Navigation
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
   }
+
+
 
   .cd-slider-navigation.slider-animating {
     /* fixes a bug on Firefox with ul.cd-slider-navigation z-index */
