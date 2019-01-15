@@ -2260,3 +2260,165 @@ Slider Navigation
     color: #f3b96c;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   project  displays           */
+
+.proj {
+  background-color: #0a192f;
+  position: relative;
+  width: 95%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.projEven {
+  border-left: 5px solid #a8b2d1;
+
+}
+
+.projOdd {
+  border-right: 5px solid #a8b2d1;
+}
+
+
+.proj .left-preview {
+  background-color: #64ffda;
+  position: absolute;
+  margin: 2%;
+  width: 55%;
+  height: 90%;
+}
+
+
+.proj .proj-desc {
+
+  background-color: #172a45;
+  color: #a8b2d1;
+  position: absolute;
+  margin: 1%;
+  top: 35%;
+  padding: 25px;
+  transform: translateY(-35%);
+  z-index: 4;
+  width: 45%;
+  left: 50%;
+  height: auto;
+
+}
+
+.proj .proj-title {
+  font-size: 1.1em;
+  color: #65ffda;
+  position: absolute;
+  margin: 1%;
+  top: 3%;
+  transform: translateY(-3%);
+  z-index: 2;
+  width: auto + 1.1em;
+  right: 2.5%;
+  height: auto;
+}
+
+.proj .proj-title P {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+.proj .proj-tags {
+  color: #a8b2d1;
+  position: absolute;
+  margin: 1%;
+  padding: 1px;
+  transform: translateY(-5%);
+  z-index: 2;
+  width: 35%;
+  left: 60%;
+  bottom: 2%;
+  height: 4em;
+}
+
+
+.overlay {
+  position: relative;
+}
+
+.overlay::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+}
+
+.overlay:hover::after {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.overlay::after {
+  display: block;
+}
+
+.red:after {
+  opacity: 0.675;
+  background-color: #64ffda;
+}
+
+
+
+
+
+
+.proj a {
+  color: #64ffda;
+}
+
+.proj p {
+  color: #a8b2d1;
+}
+
+.proj-tags ul {
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  margin: 0 auto;
+}
+
+.proj-tags ul li {
+  display: inline;
+  padding: 10px 30px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .proj p {
+    font-size: 0.55em;
+  }
+
+  .proj ul {
+    font-size: 0.60em;
+  }
+}
