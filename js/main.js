@@ -565,6 +565,10 @@ document.addEventListener('scroll', eventCheck, false);
 document.addEventListener('click', eventCheck, false);
 document.addEventListener('keyup', eventCheck, false);
 document.addEventListener('mouseenter', eventCheck, false);
+document.addEventListener('touchmove', eventCheck, false);
+document.addEventListener('touchstart', eventCheck, false);
+document.addEventListener('gotpointercapture', eventCheck, false);
+
 
 
 
