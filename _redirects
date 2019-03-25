@@ -1,6 +1,2 @@
-/home   /
-/about  /about.html
-/projects /projects.html
-/testimonials /testimonial.html
-/education  /education.html
-/contact  /contact.html
+http://trenthardy.netlify.com/* https://trenthardy.netlify.com/:splat 301!
+/* /index.html 200
