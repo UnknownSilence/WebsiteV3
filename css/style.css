@@ -1601,7 +1601,8 @@ Form
 
 }
 
-.cd-form input {
+.cd-form input,
+.cd-form textarea {
     color: #282828 !important;
 }
 
