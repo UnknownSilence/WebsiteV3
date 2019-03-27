@@ -1601,6 +1601,11 @@ Form
 
 }
 
+.cd-form input,
+.cd-form textarea {
+    color: #282828 !important;
+}
+
 .cd-form input[type="text"],
 .cd-form input[type="email"],
 .cd-form textarea,
