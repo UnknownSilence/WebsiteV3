@@ -1098,3 +1098,44 @@ Slider Navigation
 		}
 	}
 }
+
+
+
+.loadingContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.loading {
+	border: 6px solid #cccccc;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border-top-color: #1ecd97;
+	border-left-color: #1ecd97;
+	animation: spin 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(1080deg);
+	}
+}
+
+
+.cd-main.hide {
+	display: none;
+}
+
+.cd-side-navigation.hide {
+	display: none;
+} 
+
+.loadingContainer.hide {
+	display: none;
+}

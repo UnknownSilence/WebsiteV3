@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    <!-- Font awesome force load as was not loading -->
-    <link
-      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700"
-      rel="stylesheet"
-    />
 
 <head>
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Trent Hardy Developer Portfolio">
-  <meta name="keywords"
-    content="HTML,CSS,JS,JavaScript,React,Angular,Web,Python,Java,Development,Developer,Intern,Job,NodeJS,ElectronJS,PWA,DataScience">
-  <meta name="author" content="Trent Hardy">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
   <!-- Font awesome force load as was not loading -->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/reset.css" />
-  <!-- CSS reset -->
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Resource style -->
-  <script src="js/modernizr.js"></script>
-  <!-- Modernizr -->
-  <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet" type="text/css" />
-  <title>Trent Hardy | Software</title>
-</head>
+  <head>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Trent Hardy Developer Portfolio">
+    <meta name="keywords"
+      content="HTML,CSS,JS,JavaScript,React,Angular,Web,Python,Java,Development,Developer,Intern,Job,NodeJS,ElectronJS,PWA,DataScience">
+    <meta name="author" content="Trent Hardy">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <!-- Font awesome force load as was not loading -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet" type="text/css" />
+    <title>Trent Hardy | Software</title>
+  </head>
 
 <body>
-  <nav class="cd-side-navigation">
+  <nav class="cd-side-navigation hide">
     <ul>
       <li>
         <a href="" class="selected" data-menu="index">
@@ -133,7 +127,11 @@
   </nav>
   <!-- .cd-side-navigation -->
 
-  <main class="cd-main">
+  <div class="loadingContainer">
+    <div class="loadings"></div>
+  </div>
+
+  <main class="cd-main hide" id="mainPageComponent">
     <section class="cd-section index visible">
       <header style="background: url('./assets/bg-05.jpg')">
         <div class="cd-title">
@@ -169,13 +167,13 @@
         <a href="#index-content" class="cd-scroll">Scroll Down</a>
       </header>
 
-      <div class="cd-content" style="background: url('./assets/bg-03.jpg')" id="index-content">
+      <div class="cd-content" style="background-color: #23272A!important; background: #23272A;" id="index-content">
         <div class="skills-section">
-          <h1 style="font-size: 2em; padding: 25px;">Skills</h1>
+          <h1 style="font-size: 2em; padding: 25px; color: #dfdfdf;">Skills</h1>
           <br />
           <div class="skill-row">
             <div class="left-skills">
-              <h2>Languages</h2>
+              <h2 style="color: #ffffff">Languages</h2>
               <ul class="skill-list language-skills column">
                 <li>Java</li>
                 <li>Javascript</li>
@@ -189,7 +187,7 @@
             </div>
             <br />
             <div class="right-skills">
-              <h2>Technologies</h2>
+              <h2 style="color: #ffffff">Technologies</h2>
               <ul class="skill-list language-skills column">
                 <li>AutoDesk AutoCAD</li>
                 <li>AutoDesk Inventor</li>
@@ -213,7 +211,7 @@
         <div class="skills-section">
           <h1>&nbsp;</h1>
           <br />
-          <p class="hero-state">
+          <p style="color:#46ffdb" class="hero-state">
             My name is Trent Hardy. I am a active developer who enjoys
             working with various modern technologies. My primary enjoyment
             comes from application development for both the web and PC. Most
@@ -239,12 +237,39 @@
   <!-- Resource jQuery -->
 </body>
 
-    <div id="cd-loading-bar" data-scale="1" class="index"></div>
-    <!-- lateral loading bar -->
-    <script src="./js/jquery-2.1.4.js"></script>
-    <script src="./js/velocity.min.js"></script>
-    <script src="./js/jquery.flexslider-min.js"></script>
-    <script src="./js/main.js"></script>
-    <!-- Resource jQuery -->
-  </body>
+<div id="cd-loading-bar" data-scale="1" class="index"></div>
+<!-- lateral loading bar -->
+<script>
+
+
+  window.onload = function () {
+    if (localStorage.getItem("hasCodeRunBefore") === null) {
+      setTimeout(() => {
+        document.querySelector('.cd-main').classList.remove('hide');
+        document.querySelector('.cd-side-navigation').classList.remove('hide');
+        document.querySelector('.loadingContainer').classList.add('hide');
+      }, 5000);
+      localStorage.setItem("hasCodeRunBefore", true);
+    }
+  }
+
+
+  var page = document.getElementById('mainPageComponent');
+  page.addEventListener('load', hideLoader());
+
+  function hideLoader() {
+    document.querySelector('.cd-main').classList.remove('hide');
+    document.querySelector('.cd-side-navigation').classList.remove('hide');
+    document.querySelector('.loadingContainer').classList.add('hide');
+  }
+
+
+</script>
+<script src="./js/jquery-2.1.4.js"></script>
+<script src="./js/velocity.min.js"></script>
+<script src="./js/jquery.flexslider-min.js"></script>
+<script src="./js/main.js"></script>
+<!-- Resource jQuery -->
+</body>
+
 </html>
