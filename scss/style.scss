@@ -18,6 +18,10 @@ Primary style
 	box-sizing: border-box;
 }
 
+::focus {
+	color: #666666;
+}
+
 html {
 	font-size: 62.5%;
 }
@@ -143,7 +147,7 @@ Navigation
 
 	li:nth-of-type(5) .selected>svg *,
 	li:nth-of-type(5) .selected:hover>svg * {
-		stroke: $color-5;
+		stroke: $color-7;
 	}
 
 	li:nth-of-type(6) .selected>svg *,
@@ -165,7 +169,7 @@ Navigation
 	}
 
 	li:nth-of-type(5) a::after {
-		background-color: $color-5;
+		background-color: $color-7;
 	}
 
 	li:nth-of-type(6) a::after {
